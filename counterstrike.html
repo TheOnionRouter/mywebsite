@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-Strike</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+        h1 img {
+            margin-right: 10px;
+            max-height: 40px; /* Adjust height as needed */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .cool-link {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .menu-toggle span {
+            height: 2px;
+            width: 25px;
+            background-color: #fff;
+            margin: 4px 0;
+            transition: all 0.3s ease-in-out;
+        }
+        nav {
+            background-color: #333; /* Updated background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* Updated text color */
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #4CAF50; /* Updated hover color */
+        }
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+            }
+            nav {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+            nav.active {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1><img src="C:\Users\Student4\Downloads\FICATAA\counter-strike-logo-png-transparent.png" alt="Counter-Strike Logo">Counter-Strike</h1>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="https://store.steampowered.com/app/10/CounterStrike/">Buy</a></li>
+            <li><a href="https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png">About</a></li>
+            <li><a href="https://bangkokmentalhealthhospital.com/">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <p>Counter-Strike is a popular multiplayer first-person shooter game developed by Valve Corporation. Originally released as a modification for Half-Life, it has since become its own franchise, with several iterations and spin-offs.</p>
+    
+    <h2>Gameplay</h2>
+    <p>In Counter-Strike, players join either the terrorist team or the counter-terrorist team and compete in rounds of objective-based gameplay. The objectives typically include planting or defusing bombs, rescuing hostages, or eliminating the opposing team.</p>
+    
+    <h2>Versions</h2>
+    <p>Counter-Strike has undergone several major releases, including:</p>
+    <ul>
+        <li>Counter-Strike (2000)</li>
+        <li>Counter-Strike: Condition Zero (2004)</li>
+        <li>Counter-Strike: Source (2004)</li>
+        <li>Counter-Strike: Global Offensive (2012)</li>
+	
+    </ul>
+    
+    <h2>Community</h2>
+    <p>Counter-Strike has a large and dedicated community of players, with professional esports tournaments held regularly. It also has a vibrant modding community, creating custom maps, skins, and other content.</p>
+    
+    <p>To play Counter-Strike version 1.6 in your browser, click on this <a href="#" class="cool-link" onclick="window.open('https://play-cs.com/en/servers', '_blank')">extremely random link</a>!</p>
+</div>
+
+<footer>
+    <p>© 2024 Counter-Strike Page made by Ficata. All rights reserved.</p>
+</footer>
+
+<script>
+    function toggleMenu() {
+        var nav = document.querySelector('nav');
+        nav.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
